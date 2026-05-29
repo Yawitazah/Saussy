@@ -28,9 +28,9 @@
   /* GREY STRIPE */
   .stripe { background: #5B6770; height: 4px; flex-shrink: 0; }
 
-  /* HERO IMAGE — full-width, large, radius + shadow */
+  /* HERO IMAGE — full natural height (4:3), radius + shadow, no crop */
   .hero-section {
-    padding: 20px 24px 0;
+    padding: 14px 24px 0;
     flex-shrink: 0;
   }
   .hero-img-wrap {
@@ -39,19 +39,18 @@
     box-shadow: 0 6px 24px rgba(0,0,0,0.22);
   }
   .hero-img-wrap img {
-    display: block; width: 100%;
-    height: 390px; object-fit: cover; object-position: center;
-    border: 0;
+    display: block; width: 100%; height: auto;
+    border: 0; vertical-align: top;
   }
 
   /* COMMISSION BOX */
   .commission-section {
-    padding: 16px 24px 0;
+    padding: 11px 24px 0;
     flex-shrink: 0;
   }
   .commission-box {
     background: #171796; border-radius: 10px;
-    padding: 13px 20px; display: flex; align-items: center;
+    padding: 11px 18px; display: flex; align-items: center;
     gap: 16px; color: #fff;
   }
   .commission-pct {
@@ -67,7 +66,7 @@
 
   /* PROPERTY INFO */
   .property-section {
-    padding: 12px 24px 8px;
+    padding: 8px 24px 6px;
     border-bottom: 1px solid #E4E4EE;
     display: flex; justify-content: space-between; align-items: flex-start;
     flex-shrink: 0;
@@ -92,7 +91,7 @@
     flex-shrink: 0;
   }
   .stat {
-    flex: 1; padding: 9px 0;
+    flex: 1; padding: 7px 0;
     text-align: center; border-right: 1px solid #E4E4EE;
   }
   .stat:last-child { border-right: none; }
@@ -101,7 +100,7 @@
 
   /* BODY COLS — flex-grow fills remaining space */
   .body-cols {
-    display: flex; padding: 14px 24px;
+    display: flex; padding: 10px 24px;
     flex: 1; align-items: flex-start;
   }
   .col-incentives { flex: 1; padding-right: 20px; border-right: 1px solid #E4E4EE; }
@@ -109,7 +108,7 @@
   .col-head {
     font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
     color: #171796; font-weight: bold; border-bottom: 2px solid #5B6770;
-    padding-bottom: 5px; margin-bottom: 10px;
+    padding-bottom: 4px; margin-bottom: 8px;
   }
   .incentive-item {
     font-size: 12px; line-height: 1.5; color: #2B2B2B;
@@ -122,13 +121,13 @@
   .date-col { flex: 1; }
   .date-col:first-child { padding-right: 14px; border-right: 1px solid #E4E4EE; }
   .date-col:last-child { padding-left: 14px; }
-  .date-block { margin-bottom: 10px; }
+  .date-block { margin-bottom: 8px; }
   .date-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #5B6770; }
   .date-value { font-size: 14px; font-weight: bold; color: #171796; margin-top: 2px; }
 
   /* SIGNATURE */
   .signature {
-    background: #F2F2F8; padding: 10px 24px;
+    background: #F2F2F8; padding: 8px 24px;
     border-top: 3px solid #171796;
     display: flex; align-items: center; gap: 16px;
     flex-shrink: 0;
