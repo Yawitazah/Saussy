@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lot 115 — 9109 Maybry Park Street | Eastland Yards</title>
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 8.5in; height: 11in; overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff; color: #2B2B2B;
+  }
+
+  /* HEADER */
+  .header {
+    background: #171796;
+    padding: 14px 30px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .header img.logo { height: 44px; display: block; }
+  .header .community {
+    color: #C8C8F0; font-size: 10px; letter-spacing: 2.5px;
+    text-transform: uppercase; text-align: right;
+  }
+
+  /* GOLD STRIPE */
+  .stripe { background: #BFA15F; height: 4px; }
+
+  /* HERO PHOTO */
+  .hero { width: 100%; height: 3.05in; overflow: hidden; display: block; }
+  .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* COMMISSION BANNER */
+  .commission-banner {
+    background: #171796; color: #fff;
+    padding: 10px 30px;
+    display: flex; align-items: center; gap: 18px;
+  }
+  .commission-pct {
+    font-size: 42px; font-weight: 900; color: #BFA15F;
+    line-height: 1; white-space: nowrap;
+  }
+  .commission-label {
+    font-size: 13px; line-height: 1.4; text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .commission-label strong { color: #BFA15F; }
+
+  /* PROPERTY INFO */
+  .property-section {
+    padding: 14px 30px 10px;
+    border-bottom: 1px solid #E4E4EE;
+    display: flex; justify-content: space-between; align-items: flex-start;
+  }
+  .address {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px; font-weight: bold; color: #171796; line-height: 1.2;
+  }
+  .lot-plan {
+    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: #5B6770; margin-top: 3px;
+  }
+  .price {
+    font-size: 30px; font-weight: bold; color: #BFA15F;
+    white-space: nowrap; text-align: right;
+  }
+
+  /* STATS ROW */
+  .stats {
+    display: flex; gap: 0;
+    padding: 0 30px;
+    border-bottom: 1px solid #E4E4EE;
+  }
+  .stat {
+    flex: 1; padding: 10px 0;
+    text-align: center; border-right: 1px solid #E4E4EE;
+  }
+  .stat:last-child { border-right: none; }
+  .stat-value { font-size: 20px; font-weight: bold; color: #171796; }
+  .stat-label { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #5B6770; }
+
+  /* TWO-COLUMN BODY */
+  .body-cols {
+    display: flex; gap: 0;
+    padding: 14px 30px; height: 1.85in;
+  }
+  .col-incentives { flex: 1; padding-right: 20px; border-right: 1px solid #E4E4EE; }
+  .col-dates { flex: 1; padding-left: 20px; }
+  .col-head {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: #171796; font-weight: bold; border-bottom: 2px solid #BFA15F;
+    padding-bottom: 5px; margin-bottom: 8px;
+  }
+  .incentive-item {
+    font-size: 12px; line-height: 1.5; color: #2B2B2B;
+    padding: 3px 0; display: flex; gap: 6px;
+  }
+  .incentive-item .check { color: #171796; font-weight: bold; flex-shrink: 0; }
+  .date-block { margin-bottom: 10px; }
+  .date-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #5B6770; }
+  .date-value { font-size: 14px; font-weight: bold; color: #171796; margin-top: 1px; }
+
+  /* SIGNATURE */
+  .signature {
+    background: #F2F2F8;
+    padding: 10px 30px;
+    border-top: 3px solid #171796;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .sig-photo {
+    width: 64px; height: 64px; border-radius: 50%;
+    object-fit: cover; border: 2px solid #171796; flex-shrink: 0;
+  }
+  .sig-info { flex: 1; font-size: 12px; line-height: 1.5; }
+  .sig-name {
+    font-family: Georgia, serif; font-size: 16px;
+    font-weight: bold; color: #171796;
+  }
+  .sig-title { font-size: 11px; color: #5B6770; }
+  .sig-contact { font-size: 11px; color: #2B2B2B; margin-top: 2px; }
+  .sig-contact a { color: #171796; text-decoration: none; }
+
+  .sig-logo { text-align: right; }
+  .sig-logo img { height: 36px; display: block; margin-left: auto; }
+
+  /* FOOTER */
+  .footer {
+    background: #171796;
+    padding: 7px 30px;
+    font-size: 8px; line-height: 1.5; color: #C8C8F0;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <img class="logo"
+      src="https://saussyburbank.com/wp-content/uploads/2026/04/logo-white.svg"
+      alt="Saussy Burbank">
+    <div class="community">Eastland Yards &mdash; Charlotte, NC</div>
+  </div>
+  <div class="stripe"></div>
+
+  <!-- HERO PHOTO -->
+  <div class="hero">
+    <img src="lot115_hero.jpg" alt="9109 Maybry Park Street">
+  </div>
+
+  <!-- COMMISSION BANNER -->
+  <div class="commission-banner">
+    <div class="commission-pct">4%</div>
+    <div class="commission-label">
+      <strong>Increased Buyer Agency Commission</strong><br>
+      Home must go under contract by June 30 &bull; Close by July 31
+    </div>
+  </div>
+
+  <!-- PROPERTY INFO -->
+  <div class="property-section">
+    <div>
+      <div class="address">9109 Maybry Park Street</div>
+      <div class="lot-plan">Lot 115 &nbsp;|&nbsp; Dawson 2217S &nbsp;|&nbsp; Charlotte, NC</div>
+    </div>
+    <div class="price">$529,900</div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Bedrooms</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">2.5</div>
+      <div class="stat-label">Bathrooms</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">2,214</div>
+      <div class="stat-label">Sq Ft</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">Move-In</div>
+      <div class="stat-label">Ready Now</div>
+    </div>
+  </div>
+
+  <!-- BODY COLUMNS -->
+  <div class="body-cols">
+    <div class="col-incentives">
+      <div class="col-head">Buyer Incentives</div>
+      <div class="incentive-item">
+        <span class="check">&#10003;</span>
+        <span><strong>$12,000 in flex dollars</strong> toward closing costs, rate buydown, or options</span>
+      </div>
+      <div class="incentive-item">
+        <span class="check">&#10003;</span>
+        <span><strong>FREE screened-in rear porch</strong> when financed with preferred lender</span>
+      </div>
+      <div class="incentive-item">
+        <span class="check">&#10003;</span>
+        <span>Up to <strong>$2,000 in closing costs</strong> with a preferred lender</span>
+      </div>
+    </div>
+    <div class="col-dates">
+      <div class="col-head">Key Deadlines</div>
+      <div class="date-block">
+        <div class="date-label">Under Contract By</div>
+        <div class="date-value">June 30, 2025</div>
+      </div>
+      <div class="date-block">
+        <div class="date-label">Close By</div>
+        <div class="date-value">July 31, 2025</div>
+      </div>
+      <div class="date-block">
+        <div class="date-label">Model Home</div>
+        <div class="date-value" style="font-size:12px;">9101 Maybry Park St<br>Charlotte, NC</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIGNATURE -->
+  <div class="signature">
+    <img class="sig-photo"
+      src="https://raw.githubusercontent.com/Yawitazah/Saussy/main/thomasena_headshot.png"
+      alt="Thomasena Washington">
+    <div class="sig-info">
+      <div class="sig-name">Thomasena Washington</div>
+      <div class="sig-title">Sales Consultant / Realtor&reg; &nbsp;&bull;&nbsp; Saussy Burbank</div>
+      <div class="sig-contact">
+        Office: 704-266-6143 &nbsp;&bull;&nbsp; Mobile: 704-361-6825<br>
+        <a href="mailto:twashington@saussyburbank.com">twashington@saussyburbank.com</a>
+      </div>
+    </div>
+    <div class="sig-logo">
+      <img src="https://saussyburbank.com/wp-content/uploads/2026/04/logo-navy.svg"
+        alt="Saussy Burbank">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    &copy;2025 Saussy Burbank, LLC. Prices, plans, availability and incentives subject to change without notice.
+    Incentives require home to go under contract by June 30 and close by July 31.
+    Financing incentives require use of a preferred lender. Equal housing opportunity.
+  </div>
+
+</body>
+</html>
