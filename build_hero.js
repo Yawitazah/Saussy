@@ -19,9 +19,9 @@ const path = require('path');
     .banner {
       position:absolute; top:50%; left:0;
       transform:translateY(-50%);
-      background:rgba(23,23,150,0.92);
+      background:linear-gradient(to right, rgba(23,23,150,0.82) 0%, rgba(23,23,150,0.72) 45%, rgba(23,23,150,0.32) 78%, rgba(23,23,150,0) 100%);
       display:flex; flex-direction:column; justify-content:center;
-      padding:40px 52px 40px 64px;
+      padding:64px 80px 64px 64px;
       width:700px;
     }
     .eyebrow {
