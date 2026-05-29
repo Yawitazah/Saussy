@@ -16,7 +16,7 @@ const path = require('path');
     body { width:1200px; height:500px; overflow:hidden; font-family:Arial,sans-serif; }
     .wrap { position:relative; width:1200px; height:500px; }
     .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
-    .overlay { position:absolute; inset:0; background:linear-gradient(to right, rgba(23,23,150,0.92) 0%, rgba(23,23,150,0.82) 40%, rgba(23,23,150,0.35) 70%, rgba(23,23,150,0.05) 100%); }
+    .overlay { position:absolute; inset:0; background:linear-gradient(to right, rgba(23,23,150,0.93) 0%, rgba(23,23,150,0.93) 42%, rgba(23,23,150,0.45) 62%, rgba(23,23,150,0) 100%); }
     .content {
       position:absolute; inset:0;
       display:flex; flex-direction:column; justify-content:center;
