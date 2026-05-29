@@ -4,7 +4,7 @@ const path = require('path');
 (async () => {
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1200, height: 400, deviceScaleFactor: 1 });
+  await page.setViewport({ width: 1200, height: 500, deviceScaleFactor: 1 });
 
   const fs = require('fs');
   const imgBytes = fs.readFileSync(path.resolve(__dirname, 'lot115_hero.jpg'));
@@ -13,10 +13,10 @@ const path = require('path');
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8">
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { width:1200px; height:400px; overflow:hidden; font-family:Arial,sans-serif; }
-    .wrap { position:relative; width:1200px; height:400px; }
+    body { width:1200px; height:500px; overflow:hidden; font-family:Arial,sans-serif; }
+    .wrap { position:relative; width:1200px; height:500px; }
     .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
-    .overlay { position:absolute; inset:0; background:rgba(23,23,150,0.74); }
+    .overlay { position:absolute; inset:0; background:linear-gradient(to right, rgba(23,23,150,0.92) 0%, rgba(23,23,150,0.82) 40%, rgba(23,23,150,0.35) 70%, rgba(23,23,150,0.05) 100%); }
     .content {
       position:absolute; inset:0;
       display:flex; flex-direction:column; justify-content:center;
