@@ -16,24 +16,24 @@ const path = require('path');
     body { width:1200px; height:500px; overflow:hidden; font-family:Arial,sans-serif; }
     .wrap { position:relative; width:1200px; height:500px; }
     .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
-    .overlay { position:absolute; inset:0; background: linear-gradient(to top, rgba(0,0,0,0.32) 0%, transparent 42%), linear-gradient(to right, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.62) 32%, rgba(0,0,0,0.18) 54%, transparent 70%); }
-    .content {
-      position:absolute; inset:0;
+    .banner {
+      position:absolute; top:0; left:0; bottom:0;
+      background:rgba(23,23,150,0.90);
       display:flex; flex-direction:column; justify-content:center;
-      padding:0 64px; color:#fff;
+      padding:0 52px 0 64px;
+      width:700px;
     }
     .eyebrow {
       font-size:12px; letter-spacing:3px; text-transform:uppercase;
       color:rgba(200,200,240,0.9); margin-bottom:16px;
     }
-    .headline { font-size:48px; font-weight:900; line-height:1.1; }
-    .pct { font-size:72px; font-weight:900; display:inline; }
+    .headline { font-size:48px; font-weight:900; line-height:1.1; color:#fff; }
+    .pct { font-size:72px; font-weight:900; display:inline; color:#fff; }
     .sub { font-size:17px; margin-top:14px; color:rgba(220,220,255,0.85); letter-spacing:1px; }
   </style></head><body>
   <div class="wrap">
     <img class="photo" src="${imgPath}">
-    <div class="overlay"></div>
-    <div class="content">
+    <div class="banner">
       <div class="eyebrow">An Exclusive Agent Opportunity</div>
       <div class="headline">Earn a <span class="pct">4%</span><br>Buyer Agency Commission</div>
       <div class="sub">Eastland Yards &nbsp;&bull;&nbsp; Charlotte, NC &nbsp;&bull;&nbsp; Two Move-In Ready Homes</div>
