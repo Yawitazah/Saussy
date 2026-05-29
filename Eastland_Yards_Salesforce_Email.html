@@ -5,18 +5,40 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Eastland Yards &mdash; 4% Buyer Agency Commission</title>
 <style type="text/css">
+  img { max-width:100%; height:auto; }
   @media only screen and (max-width:620px) {
-    table[class="email-wrap"] { width:100% !important; }
+    /* card */
     table[class="email-card"] { width:100% !important; max-width:100% !important; border-radius:0 !important; }
-    td[class="pad30"] { padding-left:16px !important; padding-right:16px !important; }
-    td[class="hero-td"] img { width:100% !important; height:auto !important; }
+    /* brand bar */
     td[class="brand-bar"] { padding:12px 16px !important; }
     span[class="community-tag"] { display:none !important; }
-    td[class="lot-price"] { display:block !important; text-align:left !important; font-size:20px !important; padding-top:6px !important; }
+    /* all padded cells */
+    td[class="pad30"],
+    td[class="pad30-sect"],
+    td[class="pad30-lot"] { padding-left:16px !important; padding-right:16px !important; }
+    /* lot cards: stack address + price */
     td[class="lot-addr"] { display:block !important; width:100% !important; }
-    td[class="sig-photo-td"] { display:none !important; }
-    table[class="lender-table"] td { font-size:11px !important; }
-    a[class="cta-btn"] { font-size:13px !important; padding:12px 22px !important; }
+    td[class="lot-price"] { display:block !important; text-align:left !important;
+      font-size:20px !important; padding-top:4px !important; }
+    /* lot card inner padding */
+    td[class="lot-inner"] { padding:14px 16px 16px !important; }
+    /* flyer button full width */
+    a[class="flyer-btn"] { display:block !important; text-align:center !important;
+      padding:12px 16px !important; font-size:14px !important; }
+    /* incentive block */
+    td[class="incentive-td"] { padding:16px !important; }
+    /* lender */
+    td[class="lender-outer"] { padding:20px 16px 6px !important; }
+    /* CTA */
+    td[class="cta-outer"] { padding:20px 16px 10px !important; }
+    table[class="cta-table"] { width:100% !important; }
+    td[class="cta-td"] { width:100% !important; border-radius:5px !important; }
+    a[class="cta-btn"] { display:block !important; text-align:center !important;
+      padding:16px 20px !important; font-size:16px !important; }
+    /* signature */
+    td[class="sig-outer"] { padding:16px !important; }
+    /* footer */
+    td[class="footer-td"] { padding:16px !important; }
   }
 </style>
 </head>
@@ -29,8 +51,8 @@
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="email-wrap" style="background:#F2F2F4;">
   <tr><td align="center" style="padding:18px 10px;">
 
-    <table role="presentation" width="600" cellpadding="0" cellspacing="0" class="email-card"
-      style="width:600px;max-width:600px;background:#ffffff;border-radius:8px;overflow:hidden;
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="email-card"
+      style="max-width:600px;background:#ffffff;border-radius:8px;overflow:hidden;
       box-shadow:0 2px 8px rgba(0,0,0,.10);">
 
       <!-- brand bar -->
@@ -71,36 +93,36 @@
       </td></tr>
 
       <!-- section label -->
-      <tr><td style="padding:22px 30px 10px 30px;font-family:Arial,sans-serif;">
+      <tr><td class="pad30-sect" style="padding:22px 30px 10px 30px;font-family:Arial,sans-serif;">
         <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#171796;
           border-bottom:2px solid #171796;padding-bottom:6px;font-weight:bold;">The Two Homes</div>
       </td></tr>
 
       <!-- Lot 115 -->
-      <tr><td style="padding:0 30px 18px 30px;">
+      <tr><td class="pad30-lot" style="padding:0 30px 18px 30px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
           style="border:1px solid #D8D8E8;border-radius:6px;overflow:hidden;">
           <tr><td>
             <img src="https://raw.githubusercontent.com/Yawitazah/Saussy/main/lot115_hero.jpg"
               width="540" alt="9109 Maybry Park Street"
-              style="display:block;width:100%;max-width:540px;height:auto;border:0;">
+              style="display:block;width:100%;height:auto;border:0;">
           </td></tr>
-          <tr><td style="padding:16px 20px 18px 20px;font-family:Arial,sans-serif;">
+          <tr><td class="lot-inner" style="padding:16px 20px 18px 20px;font-family:Arial,sans-serif;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-              <td style="vertical-align:top;">
+              <td class="lot-addr" style="vertical-align:top;">
                 <div style="font-family:Georgia,'Times New Roman',serif;font-size:20px;
                   font-weight:bold;color:#171796;">9109 Maybry Park Street</div>
                 <div style="font-size:11px;letter-spacing:1px;color:#5B6770;
                   text-transform:uppercase;padding-top:3px;">Lot 115 &nbsp;|&nbsp; Dawson 2217S</div>
               </td>
-              <td style="vertical-align:top;text-align:right;font-size:24px;font-weight:bold;
+              <td class="lot-price" style="vertical-align:top;text-align:right;font-size:24px;font-weight:bold;
                 color:#171796;white-space:nowrap;">$529,900</td>
             </tr></table>
             <div style="font-size:13px;color:#2B2B2B;padding:12px 0 14px 0;">
               3 Beds &nbsp;&bull;&nbsp; 2.5 Baths &nbsp;&bull;&nbsp; 2,214 Sq Ft
             </div>
             <a href="https://raw.githubusercontent.com/Yawitazah/Saussy/main/Eastland_Yards_Lot115_Agent_Flyer.pdf"
-              style="display:inline-block;background:#171796;color:#ffffff;
+              class="flyer-btn" style="display:inline-block;background:#171796;color:#ffffff;
               text-decoration:none;font-size:13px;font-weight:bold;padding:10px 22px;
               border-radius:4px;">View Property Flyer &rarr;</a>
           </td></tr>
@@ -108,30 +130,30 @@
       </td></tr>
 
       <!-- Lot 116 -->
-      <tr><td style="padding:0 30px 18px 30px;">
+      <tr><td class="pad30-lot" style="padding:0 30px 18px 30px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
           style="border:1px solid #D8D8E8;border-radius:6px;overflow:hidden;">
           <tr><td>
             <img src="https://raw.githubusercontent.com/Yawitazah/Saussy/main/lot116_hero.jpg"
               width="540" alt="9113 Maybry Park Street"
-              style="display:block;width:100%;max-width:540px;height:auto;border:0;">
+              style="display:block;width:100%;height:auto;border:0;">
           </td></tr>
-          <tr><td style="padding:16px 20px 18px 20px;font-family:Arial,sans-serif;">
+          <tr><td class="lot-inner" style="padding:16px 20px 18px 20px;font-family:Arial,sans-serif;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-              <td style="vertical-align:top;">
+              <td class="lot-addr" style="vertical-align:top;">
                 <div style="font-family:Georgia,'Times New Roman',serif;font-size:20px;
                   font-weight:bold;color:#171796;">9113 Maybry Park Street</div>
                 <div style="font-size:11px;letter-spacing:1px;color:#5B6770;
                   text-transform:uppercase;padding-top:3px;">Lot 116 &nbsp;|&nbsp; Beckett 2275E</div>
               </td>
-              <td style="vertical-align:top;text-align:right;font-size:24px;font-weight:bold;
+              <td class="lot-price" style="vertical-align:top;text-align:right;font-size:24px;font-weight:bold;
                 color:#171796;white-space:nowrap;">$549,900</td>
             </tr></table>
             <div style="font-size:13px;color:#2B2B2B;padding:12px 0 14px 0;">
               3 Beds &nbsp;&bull;&nbsp; 2.5 Baths &nbsp;&bull;&nbsp; 2,229 Sq Ft
             </div>
             <a href="https://raw.githubusercontent.com/Yawitazah/Saussy/main/Eastland_Yards_Lot116_Agent_Flyer.pdf"
-              style="display:inline-block;background:#171796;color:#ffffff;
+              class="flyer-btn" style="display:inline-block;background:#171796;color:#ffffff;
               text-decoration:none;font-size:13px;font-weight:bold;padding:10px 22px;
               border-radius:4px;">View Property Flyer &rarr;</a>
           </td></tr>
@@ -142,7 +164,7 @@
       <tr><td style="padding:6px 30px 4px 30px;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
           style="background:#171796;border-radius:6px;">
-          <tr><td style="padding:20px 24px;font-family:Arial,sans-serif;color:#ffffff;">
+          <tr><td class="incentive-td" style="padding:20px 24px;font-family:Arial,sans-serif;color:#ffffff;">
             <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;
               color:rgba(200,200,240,0.9);margin-bottom:10px;">Plus &mdash; Attractive Buyer Incentives</div>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
@@ -157,7 +179,7 @@
       </td></tr>
 
       <!-- preferred lenders -->
-      <tr><td style="padding:24px 30px 6px 30px;font-family:Arial,sans-serif;">
+      <tr><td class="lender-outer" style="padding:24px 30px 6px 30px;font-family:Arial,sans-serif;">
         <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#171796;
           border-bottom:2px solid #171796;padding-bottom:6px;font-weight:bold;
           margin-bottom:6px;">Preferred Lenders</div>
@@ -184,12 +206,12 @@
       </td></tr>
 
       <!-- CTA -->
-      <tr><td align="center" style="padding:26px 30px 10px 30px;font-family:Arial,sans-serif;">
+      <tr><td class="cta-outer" align="center" style="padding:26px 30px 10px 30px;font-family:Arial,sans-serif;">
         <p style="margin:0 0 16px 0;font-size:15px;line-height:1.6;color:#2B2B2B;">
           Think about clients who would be a great fit for either home, and let&rsquo;s find a
           convenient time to schedule a showing.</p>
-        <table role="presentation" cellpadding="0" cellspacing="0"><tr>
-          <td style="background:#171796;border-radius:5px;">
+        <table role="presentation" class="cta-table" cellpadding="0" cellspacing="0"><tr>
+          <td class="cta-td" style="background:#171796;border-radius:5px;">
             <a href="mailto:twashington@saussyburbank.com?subject=Eastland%20Yards%20Showing"
               class="cta-btn" style="display:inline-block;padding:14px 34px;font-family:Arial,sans-serif;
               font-size:15px;font-weight:bold;color:#ffffff;text-decoration:none;">
@@ -199,7 +221,7 @@
       </td></tr>
 
       <!-- signature -->
-      <tr><td style="padding:18px 30px 26px 30px;font-family:Arial,sans-serif;">
+      <tr><td class="sig-outer" style="padding:18px 30px 26px 30px;font-family:Arial,sans-serif;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
           style="border-top:1px solid #D8D8E8;">
           <tr>
@@ -227,7 +249,7 @@
       </td></tr>
 
       <!-- footer -->
-      <tr><td style="background:#171796;padding:18px 30px;font-family:Arial,sans-serif;">
+      <tr><td class="footer-td" style="background:#171796;padding:18px 30px;font-family:Arial,sans-serif;">
         <img src="https://saussyburbank.com/wp-content/uploads/2026/04/logo-white.svg"
           width="120" height="39" alt="Saussy Burbank"
           style="display:block;border:0;margin-bottom:10px;">
