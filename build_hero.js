@@ -7,8 +7,8 @@ const path = require('path');
   await page.setViewport({ width: 1200, height: 620, deviceScaleFactor: 1 });
 
   const fs = require('fs');
-  const imgBytes = fs.readFileSync(path.resolve(__dirname, 'lot115_hero.jpg'));
-  const imgPath = 'data:image/jpeg;base64,' + imgBytes.toString('base64');
+  const imgBytes = fs.readFileSync(path.resolve(__dirname, 'Saussy Burbank Eastland Yards Community.webp'));
+  const imgPath = 'data:image/webp;base64,' + imgBytes.toString('base64');
 
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8">
   <style>
